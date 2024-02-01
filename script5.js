@@ -32,7 +32,7 @@ function printNumber(num){
     }
 }
 
-printNumber(245);
+// printNumber(245);
 
 // 5. Return sum of digits of a number ex: x = 123 output: 6 (1+2+3 = 6)
 
@@ -70,4 +70,16 @@ function factors(num){
     console.log(count);
 }
 
-factors(12);
+// factors(12);
+
+// 7. Given a numerb return its factorial
+
+function fact(n) {
+var fact = 1;
+    for(i = 1; i <= n; i++){
+        fact = fact * i;
+    }
+    console.log('Factorial of',n,'is',fact);
+}
+
+// fact(4);
