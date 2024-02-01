@@ -93,4 +93,16 @@ function milesToKiloMeters(miles){
     console.log(parseInt(kilometers));
 }
 
-milesToKiloMeters(10)
+// milesToKiloMeters(5);
+
+// Given a temperature in Celsius convert it to Fahrenheit
+
+function celsiusToFahrenheit(Celsius){
+
+    var fahrenheit = Celsius * 1.8;
+    fahrenheit += 32;
+
+    console.log(fahrenheit);
+}
+
+celsiusToFahrenheit(20);
