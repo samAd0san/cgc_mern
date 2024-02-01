@@ -83,3 +83,14 @@ var fact = 1;
 }
 
 // fact(4);
+
+// 8. Given a distance in miles convert it to kilometers
+
+function milesToKiloMeters(miles){
+
+    var kilometers = miles* 1.60934;
+
+    console.log(parseInt(kilometers));
+}
+
+milesToKiloMeters(10)
