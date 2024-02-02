@@ -95,7 +95,7 @@ function milesToKiloMeters(miles){
 
 // milesToKiloMeters(5);
 
-// Given a temperature in Celsius convert it to Fahrenheit
+// 9. Given a temperature in Celsius convert it to Fahrenheit
 
 function celsiusToFahrenheit(Celsius){
 
