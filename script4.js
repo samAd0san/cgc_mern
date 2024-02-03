@@ -29,6 +29,8 @@ function sumOfAllElementsInArray(inputArray){
 // sumOfAllElementsInArray(arr);
 
 function calcGrade(agg){
+
+    console.log('Grade Secured:');
     if(agg > 80 && agg <= 100){
         console.log('S');
     }else if (agg > 60 && agg <= 80) {
