@@ -20,7 +20,7 @@ function add(a,b) {
     console.log(a + b);
 }
 
-function addArr(arr) { // This is a function for specific array
+function addArr(arr) { // This is a function for specificly array
     var sum = 0;
     for(var i = 0; i < arr.length; i++) {
         if(Array.isArray(arr[i])){ // this is for nested array
