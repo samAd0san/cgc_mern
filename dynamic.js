@@ -31,6 +31,7 @@ function fn2() {return 200;}
 
 add([1,3,[1,3,2],2],[5,2,1,6]); // 12 + 14 = 26
 
+// Less Optimised Problem for more optimised check nestedArr.js
 function addArr(arr) {
     var sum = 0;
     for (var i = 0; i < arr.length; i++) {
