@@ -213,3 +213,5 @@ function bill(unit) {
 
 // bill(120);   
 
+var list = [1,2,4,5];
+console.log(list.length);

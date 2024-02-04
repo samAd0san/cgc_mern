@@ -48,4 +48,15 @@ function rangeIsPrime(range) {
     }
 }
 
-rangeIsPrime(20);
+// rangeIsPrime(20);
+
+// Displaying the elements of an array recursively
+function displayArray(arr, i=0) {
+    if(i === arr.length) return 0; 
+
+    console.log(arr[i]);
+
+    displayArray(arr,i+1);
+}
+
+displayArray([1,2,3,4]);
