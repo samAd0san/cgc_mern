@@ -55,3 +55,27 @@ function addSubArr(arr){
 }
 
 // console.log(typeof(addArr));
+
+function sumArray(arr, index = 0) {
+    if (index === arr.length) {
+        return 0;  // base case: end of array
+    }
+
+    if (Array.isArray(arr[index])) {
+        return sumArray(arr[index]) + sumArray(arr, index + 1); // recursion for nested array
+    } else if (typeof arr[index] === 'function') {
+        return arr[index]() + sumArray(arr, index + 1); // recursion for function call
+    } else {
+        return arr[index] + sumArray(arr, index + 1); // recursion for plain addition
+    }
+}
+
+function add(a, b) {
+    var result = sumArray(Array.isArray(a) ? a : [a]) + sumArray(Array.isArray(b) ? b : [b]);
+    console.log(result);
+}
+
+// Example usage:
+add([1, 3, [1, 3, 2], 2], [5, 2, 1, 6]); // Output: 26
+add([1, [2, [3, [4, 5]]], [6, 7], 8]); // Output: 36
+add(10, 5); // Output: 15

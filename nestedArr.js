@@ -33,6 +33,6 @@ function addArr(arr) { // This is a function for specificly array
     return sum;
 }
 
-// add([1, [2, [3, [4, 5]]]], [[6, 7], 8]);
+add([1, [2, [3, [4, 5]]]], [[6, 7], 8]);
 add([1, 3, [1, 3, 2], 2], [5, 2, 1, 6]);
 // add(10,[2,6,1,[7,3,1],9]);
