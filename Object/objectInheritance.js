@@ -1,19 +1,33 @@
-// inheritance
-// class
+// Inheritance
+// object.create(); method
+
+/* Syntax: 
+
+    var object_name = Object.create(superClass, {
+        key_name: value
+    });
+
+*/
 var absMobile = {
-    print: function () {
-        console.log('printing');
+    print: function() {
+        console.log('absMobile');
     }
 };
 
 var m1 = Object.create(absMobile, {
-    width: { value: 5, enumerable: true }
+    width: {value: 5, enumerable: true}
 });
 
-// method hiding, overriding 
-m1.print = function () {
-    console.log('new fun');
+// console.log(m1);
+
+m1.print = function() {
+    console.log('m1');
 }
 
-absMobile.print.call(m1);
+// to print its m1 objects own method
 m1.print();
+
+// to print m1's parent method
+Object.getPrototypeOf(m1).print();
+m1.__proto__.print();
+absMobile.print.call(m1); // <-- CHOOSE THIS
