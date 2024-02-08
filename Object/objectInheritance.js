@@ -31,3 +31,5 @@ m1.print();
 Object.getPrototypeOf(m1).print();
 m1.__proto__.print();
 absMobile.print.call(m1); // <-- CHOOSE THIS
+Object.getPrototypeOf(m1).print(); // Accessing the print function of the student object
+

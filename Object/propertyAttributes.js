@@ -24,7 +24,7 @@ var student = {
 // Now by using Object.DefineProperty(); i am adding new keyValue pair
 
 Object.defineProperty(student,'Dept',{
-    enumerable: false, // On making enumerable false we cannot add a new keyValue pair to the object 
+    enumerable: true, // On making enumerable false we cannot add a new keyValue pair to the object 
     writable: false, // making writable false will not allow me to modify the value
     value: 'IT'
 });

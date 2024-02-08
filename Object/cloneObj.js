@@ -29,6 +29,17 @@ var emp1 = {
     }
 };
 
+// Shallow cloning 
+
+/* Shallow cloning involves creating a new object or array and copying
+the top-level properties or elements, but not deeply nested structures,
+resulting in shared references to nested objects or arrays. */
+
+var shallowEmp1 = Object.assign({},emp1);
+
+console.log(emp1 === shallowEmp1); // false
+console.log(emp1.address === shallowEmp1.address); // true
+
 
 // Cloning an object with no nested elements
 
@@ -62,8 +73,8 @@ for(var key in emp1) {
 // changing the value of the emp2 to check whether it'll reflect the emp1
 // console.log(emp2);
 emp2.address["hNo"] = '2345';
-console.log("emp2:",emp2);
-console.log('emp1:',emp1);
-console.log(emp1.address === emp2.address); //false
+// console.log("emp2:",emp2);
+// console.log('emp1:',emp1);
+// console.log(emp1.address === emp2.address); //false
 
 

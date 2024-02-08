@@ -10,7 +10,7 @@
 
 var m1 = Object.create({},{
     width: {value: 1, enumerable: true},
-    // height: {value: 2, enumerable: false}
+    height: {value: 2, enumerable: false, configurable: false}
 });
 
 Object.defineProperty(m1,'height',{
