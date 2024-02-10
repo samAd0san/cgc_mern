@@ -9,19 +9,22 @@ Object.defineProperties(m1,{
     address: { value: {hNo: '324/A/4',city: 'HYD'},enumerable:true }
 });
 
-// for(let key in m1) {
-//     console.log(key,':',m1[key]);
-// }
-
-// console.log(m1,'\n');
 console.log(m1.rno);
-m1.print();
+// m1.print();
 
 Object.defineProperties(m1, {
-    rno: {value: 456, enumerable: true},
-    print: {value: function(){console.log('Modified Object m1');},enumerable:true}
+    rno: {value: 456, enumerable: false},
+    print: {value: function(){console.log('Modified Object m1');},enumerable:false}
 });
 
 // console.log(m1);
 console.log(m1.rno);
-m1.print();
+// m1.print();
+
+// If enumerable is false for any attribute in the object it'll not executing in the below methods
+
+// for(var prop in m1) {
+//     console.log(`${prop} : ${m1[prop]}`);
+// }
+
+console.log(Object.keys(m1));

@@ -16,19 +16,29 @@ console.log(delete m1.width); // false because configurable is false
 
 // 3. To explain enumeration i will demonstrate with the help of an example
 
-var student = {
-    id: 118,
-    name: 'Sam'
-};
+// var student = {
+//     id: 118,
+//     name: 'Sam'
+// };
+
+var student = {};
 
 // Now by using Object.DefineProperty(); i am adding new keyValue pair
 
 Object.defineProperty(student,'Dept',{
-    enumerable: true, // On making enumerable false we cannot add a new keyValue pair to the object 
+    enumerable: true, // 
     writable: false, // making writable false will not allow me to modify the value
     value: 'IT'
 });
 
 // student.Dept = 'CSE'; // This value cannot be modified because writable is false
 
-console.log(student);
+// console.log(student.Dept);
+
+
+// Making enumerable false will cause this two methods to stop from executing 
+for(var prop in student) {
+    console.log(`${prop} : ${student[prop]}`);
+}
+
+console.log(Object.keys(student));
