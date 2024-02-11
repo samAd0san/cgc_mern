@@ -9,4 +9,9 @@
 let name = 'Sam'
 var age = 20;
 
+// To ease this method we use string interpolation
+// var op = name + " is working for " + dept +
+//     "and his " +
+//     "salary is " + salary;
+
 console.log(`My name is ${name} and i am ${age} years old `);
