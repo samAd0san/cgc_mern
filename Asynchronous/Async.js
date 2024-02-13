@@ -1,7 +1,7 @@
 /*Asynchronous code allows multiple operations to be executed with out blocking the main thread.
 Since, we know that JavaScript is single threaded*/
 
-function addASync(a,b,cb) {
+function addASync(a,b) {
     console.log('Execution Started...');
     // This function is used to schedule the the execution of a function after a specified delay
     setTimeout(function(){
@@ -12,7 +12,8 @@ function addASync(a,b,cb) {
         ++b;
 
         var c = a + b;
-        cb(c);
+        // when the delay occurs it'll not return the return value rather skip it 
+        return c;
         console.log('Calculatoin ended.');
     },2000);
     console.log('Execution ended.');
