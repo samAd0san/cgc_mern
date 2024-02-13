@@ -35,6 +35,7 @@ function sumAsync(a, b, cb){
 
         var c = a + b;
 
+        if(typeof cb !== 'function') throw new Error('Invalid callback');
         cb(c); // we are passing the return value to the function to retrieve the value
     },2000);
 }
