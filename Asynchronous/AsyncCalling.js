@@ -36,7 +36,7 @@ multSync(2,5,(err,res) => {
     else console.log(res);
 });
 
-// Or we can explicitly create a call back function then pass it as an argument
+// Or we can explicitly create a call back function then pass it as an
 var callback = (err,res) => {
     if(err) console.log(err);
     else console.log(res);
