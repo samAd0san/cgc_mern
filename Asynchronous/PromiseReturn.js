@@ -100,4 +100,6 @@ addAsync(10,5)
     .then((subRes) => multAsync(subRes,3))
     .then((multRes) => divAsync(multRes,1))
     .then((divRes) => console.log('Final:',divRes))
+    
+    // to catch the error
     .catch((err) => console.log(err))
