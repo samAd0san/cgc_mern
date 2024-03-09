@@ -26,6 +26,6 @@ for(var i in employee) {
     // Only the keys will be accessed
     console.log(i,employee[i]);
 
-    // Only the values will be accessed and i.e by bracket notation
+    // Only the values will be accessed by using bracket notation
     // console.log(employee[i]);
 }

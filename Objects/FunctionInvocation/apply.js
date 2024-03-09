@@ -11,7 +11,7 @@ const person = {
 }
 
 const persone = {
-    name: 'Border',
+    name: 'Mike',
     age: 34,
 }
 
