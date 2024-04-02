@@ -12,4 +12,13 @@ const data = [
 ];
 
 const result = sortByKey(data,'age');
-console.log(result);
+// console.log(result);
+
+
+// palindrome
+
+function isPalindrome(str){
+    return str.toLowerCase() === str.toLowerCase().split('').reverse().join('');
+}
+
+console.log(isPalindrome('malayalam'));
