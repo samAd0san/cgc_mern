@@ -47,4 +47,12 @@ function testPrime(n){
 }
 
 // console.log(isPrime(10));
-testPrime(30)
+// testPrime(30)
+
+// Write a JavaScript program to convert a string to title case (capitalize the first letter of each word). 
+
+function toTitleCase(str){
+    return str.replace(/\b\w/g, l => l.toUpperCase()); 
+}
+
+console.log(toTitleCase('this is title case'));
