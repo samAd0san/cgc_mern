@@ -56,3 +56,14 @@ function toTitleCase(str){
 }
 
 console.log(toTitleCase('this is title case'));
+
+// Implement a function that flattens a nested array in JavaScript, converting it into a single-level array. 
+
+const flattenArray = (nestedArray) => { 
+
+    return nestedArray.flat(Infinity); 
+  
+}; 
+
+const arr = [1,2,3,[3,4,[5]]];
+console.log(flattenArray(arr));
