@@ -45,3 +45,10 @@ const totalMarks = students
     .reduce((acc, curr) => acc + curr.marks, 0)
 
 console.log(totalMarks) // 224
+
+// BONUS qn. Sum all the elemnts
+const arr = [1, 2, 3, [3, 4, [5]]];
+
+const sumOfArr = arr.flat(Infinity).reduce((sum, num) => sum + num, 0);
+
+console.log(sumOfArr);
